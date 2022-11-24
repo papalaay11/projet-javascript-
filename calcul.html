@@ -1,0 +1,32 @@
+<!Doctype html>
+<html>
+<head>
+<title>Calculatrice</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Calculatrice</legend>
+    <label >Entrer un nombre</label>
+    <input type="num" id="n1"><br>
+    <label >Entrer un nombre</label>
+    <input type="num" id="n2"><br>
+    <input type="button" value="calcule" onclick="calcul()"><br>
+    
+    </fieldset>
+    <div id="resultat">
+
+    </div>
+    
+    <script>
+        function calcul(){
+            var n1 = parseInt(document.getElementById("n1").value);
+            var n2= parseInt(document.getElementById("n2").value);
+            document.getElementById("resultat").textContent =
+            "Le somme est: "+((n1+n2)+"-------"
+            +"\n La multiplication est: "+(n1*n2)+"----------"+"La division est: "+(n1/n2)+"-------- "+"Le modulo est: "+(n1%n2));
+            
+        }
+    </script>
+
+</body>
+</html>
